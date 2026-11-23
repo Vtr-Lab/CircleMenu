@@ -1,0 +1,99 @@
+#blueBtn, #redBtn {
+    position: fixed;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#blueBtn {
+    top: 20px;
+    background: blue;
+}
+
+#redBtn {
+    top: 77px;
+    background: red;
+}
+
+#imageArea {
+    position: relative;
+    width: 750px;
+    height: 650px;
+    margin: 20px auto;
+}
+
+#gridOne, #gridTwo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gridOne img, #gridTwo img {
+    position: absolute;
+    display: block;
+    object-fit: contain;
+    transform-origin: top left;
+    transition: 0.6s;
+}
+
+.hide img {
+    opacity: 0;
+}
+.hide #img1, .hide #img8 {translate: -100px -70px;}
+.hide #img2, .hide #img9 {translate: 100px -100px;}
+.hide #img3, .hide #img10 {translate: -130px 30px;}
+.hide #img4, .hide #img11 {translate: 80px 100px;}
+.hide #img5, .hide #img12 {translate: -60px -120px;}
+.hide #img6, .hide #img13 {translate: 130px 50px;}
+.hide #img7, .hide #img14 {translate: -100px 100px;}
+.show img {
+    translate: 0 0;
+    opacity: 1;
+}
+#img1, #img8 {
+    top: 0;
+    left: 0;
+    transform: scale(0.17);
+}
+
+#img2, #img9 {
+    top: 0;
+    left: 440px;
+    transform: scale(0.16);
+}
+
+#img3, #img10 {
+    top: 230px;
+    left: 0;
+    transform: scale(0.28);
+}
+
+#img4, #img11 {
+    top: 480px;
+    left: 0;
+    transform: scale(0.21);
+}
+
+#img5, #img12 {
+    top: 480px;
+    left: 150px;
+    transform: scale(0.21);
+}
+
+#img6, #img13 {
+    top: 480px;
+    left: 300px;
+    transform: scale(0.21);
+}
+
+#img7, #img14 {
+    top: 480px;
+    left: 470px;
+    transform: scale(0.21);
+}

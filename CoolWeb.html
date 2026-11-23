@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CoolWeb</title>
+    <link rel="stylesheet" href="CoolWeb.css">
+</head>
+<body>
+
+    <button id="blueBtn"></button>
+    <button id="redBtn"></button>
+
+    <div id="imageArea">
+
+        <div id="gridOne" class="show">
+            <img id="img1" src="3.png" alt="">
+            <img id="img2" src="4.png" alt="">
+            <img id="img3" src="5.png" alt="">
+            <img id="img4" src="6.png" alt="">
+            <img id="img5" src="7.png" alt="">
+            <img id="img6" src="8.png" alt="">
+            <img id="img7" src="9.png" alt="">
+        </div>
+
+        <div id="gridTwo" class="hide">
+            <img id="img8" src="10.png" alt="">
+            <img id="img9" src="11.png" alt="">
+            <img id="img10" src="12.png" alt="">
+            <img id="img11" src="13.png" alt="">
+            <img id="img12" src="14.png" alt="">
+            <img id="img13" src="15.png" alt="">
+            <img id="img14" src="16.png" alt="">
+        </div>
+
+    </div>
+
+    <script>
+        const one = document.getElementById("gridOne");
+        const two = document.getElementById("gridTwo");
+
+        document.getElementById("blueBtn").onclick = function() {
+            one.className = "show";
+            two.className = "hide";
+        };
+
+        document.getElementById("redBtn").onclick = function() {
+            one.className = "hide";
+            two.className = "show";
+        };
+    </script>
+
+</body>
+</html>
